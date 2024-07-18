@@ -22,3 +22,15 @@
     }
     return result;
 }
+
+void PrintArray(string[] array) // вывод массива
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        System.Console.Write("'" + array[i] + "', ");
+    }
+    System.Console.WriteLine("");
+}
+
+string[] array = { "1234", "1567", "-2", "computer science" };
+PrintArray(ArrayFilter(array));
